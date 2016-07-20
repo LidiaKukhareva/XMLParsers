@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ships xmlns="http://www.epam.tc.com/ships">
+	
+	<ship id="1" name="Martina">
+		<shipNationality>Italian</shipNationality>
+		<yearOfBirth>1700</yearOfBirth>
+		<length>100</length>
+		<width>50</width>
+		<height>50</height>
+		<route>
+			<Sea>Caribbean</Sea>
+			<Sea>Sargasso</Sea>
+		</route>
+		<crew>
+			<pirate id="1">
+				<nickname>James</nickname>
+				<nationality>English</nationality>
+			</pirate>
+			<pirate id="2">
+				<nickname>One-eyed</nickname>
+				<nationality>Scottish</nationality>
+			</pirate>
+			<pirate id="3">
+				<nickname>John Silver</nickname>
+				<nationality>English</nationality>
+			</pirate>
+		</crew>
+	</ship>
+	<ship id="2" name="Black Pearl">
+		<shipNationality>Italian</shipNationality>
+		<yearOfBirth>1705</yearOfBirth>
+		<length>300</length>
+		<width>150</width>
+		<height>150</height>
+		<route>
+			<Sea>Japanese</Sea>
+			<Sea>Yellow</Sea>
+			<Sea>Red</Sea>
+		</route>
+		<crew>
+			<pirate id="1">
+				<nickname>JackSparrow</nickname>
+				<nationality>English</nationality>
+			</pirate>
+			<pirate id="2">
+				<nickname>Barbossa</nickname>
+				<nationality>American</nationality>
+			</pirate>
+			<pirate id="3">
+				<nickname>Will Turner</nickname>
+				<nationality>English</nationality>
+			</pirate>
+			<pirate id="4">
+				<nickname>Elizabeth Turner</nickname>
+				<nationality>English</nationality>
+			</pirate>
+		</crew>
+	</ship>
+	<ship id="3" name="Orlando Breeze">
+		<shipNationality>American</shipNationality>
+		<yearOfBirth>1690</yearOfBirth>
+		<length>500</length>
+		<width>250</width>
+		<height>250</height>
+		<route>
+			<Sea>Japanese</Sea>
+			<Sea>Yellow</Sea>
+			<Sea>Red</Sea>
+		</route>
+		<crew>
+			<pirate id="1">
+				<nickname>Fenimor</nickname>
+				<nationality>American</nationality>
+			</pirate>
+			<pirate id="2">
+				<nickname>Bloor</nickname>
+				<nationality>American</nationality>
+			</pirate>
+			<pirate id="3">
+				<nickname>Captain Flick</nickname>
+				<nationality>Irish</nationality>
+			</pirate>
+			<pirate id="4">
+				<nickname>Little</nickname>
+				<nationality>English</nationality>
+			</pirate>
+		</crew>
+	</ship>
+</ships>

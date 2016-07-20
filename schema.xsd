@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://epam.tc.ships.schema">
+
+    <element name="ships" >
+            <complexType>
+                    <sequence>
+                            <element name="ship" type="Ship" minOccurs="1" maxOccurs="unbounded"/>
+                    </sequence>
+            </complexType>
+    </element>
+
+    <complexType name="Ship" >
+        <sequence>
+	    <element name="shipNationality" type="string"/>
+            <element name="yearOfBirth" type="int"/>    
+            <element name="length" type="int"/>
+            <element name="width" type="int"/>
+            <element name="height" type="int"/>
+            <element name="route" type="route"/>
+            <element name="crew" type="crew"/>
+        </sequence>
+        <attribute name="id" type="int" use="required"/>
+	<attribute name="name" type="string" use="required"/>
+    </complexType>
+
+
+    <complexType name ="route" >
+	<sequence>
+               <element name="sea" type="Sea" minOccurs="1" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name ="Sea" >
+	<restriction base="string">
+	<enumeration value="Sargasso"/>
+        <enumeration value="Caribbean"/>
+        <enumeration value="Red"/>
+        <enumeration value="Yellow"/>
+	<enumeration value="Japanese"/>
+	<enumeration value="Mediterranian"/>
+	<enumeration value="Arabian"/>
+	<enumeration value="Philippine"/>
+	</restriction>
+    </simpleType>
+  
+
+    <complexType name ="crew" >
+	<sequence>
+               <element name="pirate" type="Pirate" minOccurs="1" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType> 
+     
+    <complexType name="Pirate" >
+        <sequence>
+	    <element name="nickname" type="string"/>
+            <element name="nationality" type="string"/>   
+	</sequence>
+	<attribute name="id" type="int" use="required"/>
+    </complexType>
+</schema>
